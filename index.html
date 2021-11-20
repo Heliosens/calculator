@@ -5,47 +5,53 @@
     <title>Calculator</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b3c591f1b4.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-
     <main>
-        <div id="screen"></div>
-        <section>
-            <span>C</span>
-            <span>Ans</span>
-            <span>X</span>
-        </section>
-        <section>
-            <span>(</span>
-            <span>)</span>
-            <span>%</span>
-            <span>/</span>
-        </section>
-        <section>
-            <span>7</span>
-            <span>8</span>
-            <span>9</span>
-            <span>*</span>
-        </section>
-        <section>
-            <span>4</span>
-            <span>5</span>
-            <span>6</span>
-            <span>-</span>
-        </section>
-        <section>
-            <span>1</span>
-            <span>2</span>
-            <span>3</span>
-            <span>+</span>
-        </section>
-        <section>
-            <span>+/-</span>
-            <span>0</span>
-            <span>,</span>
-            <span>=</span>
-        </section>
+        <div id="container">
+            <section>
+                <span id="screen"></span>
+                <div>C</div>
+                <div>Ans</div>
+                <div id="backSpace">
+                    <i class="fas fa-backspace"></i>
+                </div>
+            </section>
+            <section class="red">
+                <span>(</span>
+                <span>)</span>
+                <span>%</span>
+                <span>/</span>
+            </section>
+            <section>
+                <span class="nbr">7</span>
+                <span class="nbr">8</span>
+                <span class="nbr">9</span>
+                <span class="red">*</span>
+            </section>
+            <section>
+                <span class="nbr">4</span>
+                <span class="nbr">5</span>
+                <span class="nbr">6</span>
+                <span class="red">-</span>
+            </section>
+            <section>
+                <span class="nbr">1</span>
+                <span class="nbr">2</span>
+                <span class="nbr">3</span>
+                <span class="red">+</span>
+            </section>
+            <section>
+                <div id="signe">+/-</div>
+                <span class="nbr">0</span>
+                <span>.</span>
+                <div id="equal">=</div>
+            </section>
+        </div>
     </main>
 
+    <script src="appCalc.js"></script>
 </body>
 </html>

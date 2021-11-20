@@ -6,9 +6,93 @@
 
 html {
     font-size: 62.5%;
+    font-family: sans-serif;
 }
 
 body {
     width: 100%;
+    color: blue;
 }
 
+main {
+    width: 80%;
+    margin: 1rem auto;
+    padding: .5rem;
+    border: 1px dodgerblue solid;
+    border-radius: 15px;
+    background-color: black;
+}
+
+#container, section, #screen {
+    display: flex;
+}
+
+#container section:first-child {
+    flex-wrap: wrap;
+}
+
+#container {
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+#screen {
+    flex-basis: 100%;
+    height: 12vh;
+    background-color: #AAFFCC;
+    border-radius: 15px;
+    box-shadow: inset 5px 5px white;
+    justify-content: right;
+}
+
+section span, section div {
+    flex-basis: 20%;
+    flex-grow: 1;
+    height: 10vh;
+    margin: .5rem;
+    background: #008080;
+    border: 1px #AAFFCC solid;
+    border-radius: 10px;
+    box-shadow: 2px 2px #AAFFCC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vh;
+}
+
+section span:hover, section div:hover {
+    border: 1px white solid;
+    box-shadow: none;
+}
+
+section span:last-child {
+    background: #5FD3BC;
+}
+
+.red {
+    color: red;
+}
+
+.red span {
+    background: #5FD3BC;
+}
+
+.nbr {
+    background: white;
+
+}
+
+#equal {
+    background: red;
+    color: white;
+}
+
+#backSpace {
+    background: teal;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        width: 100%;
+    }
+}
